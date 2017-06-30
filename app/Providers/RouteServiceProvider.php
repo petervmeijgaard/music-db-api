@@ -65,8 +65,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::prefix('api')
-            ->middleware([
+        Route::middleware([
                 'api',
                 'auth:api',
                 'cors',
