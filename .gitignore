@@ -1,0 +1,15 @@
+/node_modules
+/public/storage
+/public/hot
+/public/static
+/resources/views/index.blade.php
+/storage/*.key
+/vendor
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
