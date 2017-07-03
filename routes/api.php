@@ -20,6 +20,7 @@ Route::group([
     Route::get('{album}', ['as' => 'show', 'uses' => 'AlbumsController@show']);
     Route::put('{album}', ['as' => 'update', 'uses' => 'AlbumsController@update']);
     Route::delete('{album}', ['as' => 'destroy', 'uses' => 'AlbumsController@destroy']);
+    Route::get('{album}/artist', ['as' => 'artist.show', 'uses' => 'Albums\ArtistsController@show']);
 });
 
 Route::group([
@@ -42,4 +43,5 @@ Route::group([
     Route::get('{song}', ['as' => 'show', 'uses' => 'SongsController@show']);
     Route::put('{song}', ['as' => 'update', 'uses' => 'SongsController@update']);
     Route::delete('{song}', ['as' => 'destroy', 'uses' => 'SongsController@destroy']);
+    Route::get('{song}/album', ['as' => 'album.show', 'uses' => 'Songs\AlbumsController@show']);
 });
